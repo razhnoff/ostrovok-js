@@ -1,11 +1,25 @@
 .red {
+  grid-area: red;
   background: #900;
 }
 
 .green {
+  grid-area: green;
   background: #090;
 }
 
 .blue {
+  grid-area: blue;
   background: #009;
+}
+
+.wrapper {
+  min-height: 500px;
+  width: 100%;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "red blue"
+    "green blue";
 }
